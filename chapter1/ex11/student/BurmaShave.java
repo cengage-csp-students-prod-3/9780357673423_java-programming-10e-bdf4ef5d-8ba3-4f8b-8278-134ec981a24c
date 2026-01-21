@@ -5,6 +5,6 @@ class BurmaShave {
         System.out.println("Ida refused");
         System.out.println("Ida won my Ida");
         System.out.println("If Ida used");
-        System.out.println("Burma Shave.");
+        System.out.println("Burma Shave");
     }
 }
