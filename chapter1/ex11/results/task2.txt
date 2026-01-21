@@ -1,6 +1,6 @@
 
-Status: FAILED!
-Test: The `BurmaShave` program displays 'Burma Shave' on the last line.
-Reason: 'Burma Shave' should be the last line in the rhyme. Characters were displayed after 'Burma Shave'.
-Error : class java.lang.AssertionError
-- - - - - - - - - -
+Status: PASSED!
+Check: 1
+Test: 
+Reason: None
+Timestamp: 2026-01-21 18:20:31.505913
