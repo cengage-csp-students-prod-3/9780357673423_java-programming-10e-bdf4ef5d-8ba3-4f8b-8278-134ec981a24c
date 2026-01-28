@@ -13,5 +13,3 @@ public class inchesToFeetInteractive {
     }
 }
 
-// tI = iI / f , +%tI
-// f = 12i
