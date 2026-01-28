@@ -5,8 +5,8 @@ public class MileConversions {
         final int inches = 63360;
         final int feets = 5280;
         final int yards = 1760;
-        Scanner getMiles = new Scanner(System.in);
         System.out.print("Enter miles >>");
+        Scanner getMiles = new Scanner(System.in);
         int miles = getMiles.nextInt();
         int iTm = inches * miles;
         int fTm = feets * miles;
