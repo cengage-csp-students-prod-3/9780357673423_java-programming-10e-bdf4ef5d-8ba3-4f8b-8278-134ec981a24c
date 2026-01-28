@@ -13,9 +13,9 @@ public class inchesToFeetInteractive {
         Scanner getMiles = new Scanner(System.in);
         System.out.print("Enter miles >>");
         int miles = getMiles.nextInt();
-        MileConvertions(miles);
+        MileConversions(miles);
     }
-    public static int MileConvertions(int miles) {
+    public static int MileConversions(int miles) {
         final int inches = 63360;
         final int feets = 5280;
         final int yards = 1760;
