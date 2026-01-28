@@ -10,6 +10,20 @@ public class inchesToFeetInteractive {
         int totalFeets = inches/FEET;
         int totalInches = inches%FEET;
         System.out.println(inches+" inches is "+totalFeets+" feet and "+totalInches+" inches");
+        Scanner getMiles = new Scanner(System.in);
+        System.out.print("Enter miles >>");
+        int miles = getMiles.nextInt();
+        MileConvertions(miles);
+    }
+    public static int MileConvertions(int miles) {
+        final int inches = 63360;
+        final int feets = 5280;
+        final int yards = 1760;
+        int iTm = inches * miles;
+        int fTm = feets * miles;
+        int yTm = yards * miles;
+        System.out.println(miles+" miles are "+iTm+" inches, "+fTm+" feets, and "+yTm+" yards");
+        return miles;
     }
 }
 
