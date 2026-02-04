@@ -2,7 +2,9 @@
 /*
 ANALYSIS
     given an integer, display a statement that indicates whether the integer is even or odd.
+
 DESIGN
+isEven(int getNumber), return boolean.
     INPUT
         int getNumber
     LOGIC
@@ -15,7 +17,6 @@ DESIGN
 import java.util.Scanner;
 
 public class EvenOdd {
-
     public static void main(String[] args) {
         int getNumber;
         Scanner keyboard = new Scanner(System.in);
@@ -23,11 +24,13 @@ public class EvenOdd {
         getNumber = keyboard.nextInt();
         isEven(getNumber);
     }
-    public static int isEven(int getNumber){
-        if ((getNumber%2) == 0) 
-            System.out.println(getNumber+" is even.");
-        else
+    public static boolean isEven(int getNumber) {
+        boolean isOdd = false;
+        if (!(getNumber%2 == 0)) {
             System.out.println(getNumber+" is odd.");
-        return getNumber;
+            return isOdd==true;
+        }
+        System.out.println(getNumber+" is even121.");
+        return isOdd==false;
     }
 }
