@@ -17,13 +17,13 @@ import java.util.Scanner;
 public class EvenOdd {
 
     public static void main(String[] args) {
-        isEven();
-    }
-    public static int isEven(){
         int getNumber;
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter a number >> ");
         getNumber = keyboard.nextInt();
+        isEven(getNumber);
+    }
+    public static int isEven(int getNumber){
         if ((getNumber%2) == 0) 
             System.out.println(getNumber+" is even.");
         else
