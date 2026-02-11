@@ -49,7 +49,7 @@ public class ShadyRestRoom2 {
                 break;
             case 3:
                 if (getView == 1) {
-                    System.out.println("You selected King bed and a pullout couch with a lake view $"+(154+15));                
+                    System.out.println("You selected King bed and a pullout couch with a lake view $"+154);                
                 } else if (getView == 2) {
                     System.out.println("You selected King and a  pullout couch bed with a park view $165");
                 } else {
