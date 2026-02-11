@@ -98,6 +98,7 @@ public class AcmePay {
                 totalOTP=overtimePay*hoursWorked;
                 System.out.println("Overtime pay is     "+totalOTP);
                 System.out.println("Retirement deduction is "+retirementDed);
+                netPay= relularPay+overtimePay-retirementDed;
                 System.out.println("     Net pay is.............."+netPay);
     }
 }
