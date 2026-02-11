@@ -1,0 +1,12 @@
+
+Status: FAILED!
+Test: The `ShadyRestRoom2` program adds $15 to any room with a lake view.
+Reason: The user selection in this simulation is a queen bed with a lake view. Unable to find '$140' in the program's output.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
+
+Status: FAILED!
+Test: The `ShadyRestRoom2` program adds $15 to any room with a lake view.
+Reason: The user selection in this simulation is a king suite with a lake view. Unable to find '$154' in the program's output.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
