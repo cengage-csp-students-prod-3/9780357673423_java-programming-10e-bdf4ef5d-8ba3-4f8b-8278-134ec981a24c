@@ -42,7 +42,7 @@ public class ShadyRestRoom2 {
                 if (getView == 1) {
                     System.out.println("You selected King bed with a lake view $"+154);                
                 } else if (getView == 2) {
-                    System.out.println("You selected King bed with a park view $"+169);
+                    System.out.println("You selected King bed with a park view $"+139);
                 } else {
                     System.out.println("Invalid entry view $"+154);
                 }                
