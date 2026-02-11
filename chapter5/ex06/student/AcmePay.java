@@ -92,13 +92,13 @@ public class AcmePay {
     public static void print(){
             System.out.println("Hours worked is      "+hoursWorked);
                 System.out.println("Shift:             "+getShift);
-                System.out.println("Hourly pay rate is "+fistShift);
+                System.out.println("Hourly pay rate is $"+fistShift);
                 relularPay=hoursWorked*fistShift;
-                System.out.println("Regular pay is      "+relularPay);
+                System.out.println("Regular pay is      $"+relularPay);
                 totalOTP=overtimePay*hoursWorked;
-                System.out.println("Overtime pay is     "+totalOTP);
-                System.out.println("Retirement deduction is "+retirementDed);
+                System.out.println("Overtime pay is     $"+totalOTP);
+                System.out.println("Retirement deduction is $"+retirementDed);
                 netPay= relularPay+overtimePay-retirementDed;
-                System.out.println("     Net pay is.............."+netPay);
+                System.out.println("     Net pay is..............$"+netPay);
     }
 }
