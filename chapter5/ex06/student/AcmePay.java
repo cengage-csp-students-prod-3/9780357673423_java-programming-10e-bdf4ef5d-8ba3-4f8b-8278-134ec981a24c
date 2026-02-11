@@ -44,7 +44,7 @@ participate in the retirement plan (1 for "yes", 2 for "no")
 import java.util.Scanner;
 
 public class AcmePay {
-        static double fistShift=17;
+        static double fistShift=15;
         static double secondShift=18.50;
         static double thirdShift=22;
         static int getShift;
@@ -74,10 +74,10 @@ public class AcmePay {
                 System.out.println("Please enter hours worked (can be a fraction) >>");
                 hoursWorked = keyboard.nextInt();
                 retirementDed=0;
-                if (hoursWorked>40) {
-                    overtimePay = fistShift*.5;
+                if (hoursWorked<40) {                    
                     print();
                 } else {
+                    overtimePay = fistShift*.5;
                     print();
                 }
                 break;
