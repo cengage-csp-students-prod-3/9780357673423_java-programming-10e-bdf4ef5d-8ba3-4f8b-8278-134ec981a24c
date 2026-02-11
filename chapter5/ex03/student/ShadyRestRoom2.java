@@ -40,11 +40,11 @@ public class ShadyRestRoom2 {
                 break;
             case 2:
                 if (getView == 1) {
-                    System.out.println("You selected King bed with a lake view $"+139+15);                
+                    System.out.println("You selected King bed with a lake view $"+(139+15));                
                 } else if (getView == 2) {
-                    System.out.println("You selected King bed with a park view $"+139);
+                    System.out.println("You selected King bed with a park view $"+(139));
                 } else {
-                    System.out.println("Invalid entry view $"+139+15);
+                    System.out.println("Invalid entry view $"+(139+15));
                 }                
                 break;
             case 3:
