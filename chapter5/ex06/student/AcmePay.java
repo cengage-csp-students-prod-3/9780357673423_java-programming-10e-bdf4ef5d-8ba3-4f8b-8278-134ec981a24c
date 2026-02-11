@@ -44,7 +44,7 @@ participate in the retirement plan (1 for "yes", 2 for "no")
 import java.util.Scanner;
 
 public class AcmePay {
-        static double fistShift=15;
+        static double fistShift=17;
         static double secondShift=18.50;
         static double thirdShift=22;
         static int getShift;
