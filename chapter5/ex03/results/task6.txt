@@ -1,6 +1,6 @@
 
-Status: FAILED!
-Test: The `ShadyRestRoom2` defaults invalid selections to lake view rooms.
-Reason: The room in this simulation was a king bed with an invalid view. The room should default to a lake view and charge '$154'.
-Error : class java.lang.AssertionError
-- - - - - - - - - -
+Status: PASSED!
+Check: 1
+Test: 
+Reason: None
+Timestamp: 2026-02-11 11:57:18.273196
