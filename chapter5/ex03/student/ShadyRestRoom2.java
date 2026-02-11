@@ -12,6 +12,9 @@ public class ShadyRestRoom2 {
     public static void main(String[] args) {
         int getChoose;
         int getView;
+        final int queen = 125;
+        final int king = 139;
+        final int kingCouch = 165;
         System.out.println("Menu:");
         System.out.println("(1) Queen bed");
         System.out.println("(2) King bed");
@@ -28,7 +31,7 @@ public class ShadyRestRoom2 {
         switch (getChoose) {
             case 1:
                 if (getView == 1) {
-                    System.out.println("You selected Queen bed with a lake view $139");                
+                    System.out.println("You selected Queen bed with a lake view $"+(queen+15));                
                 } else if (getView == 2) {
                     System.out.println("You selected Queen bed with a park view $125");
                 } else {
