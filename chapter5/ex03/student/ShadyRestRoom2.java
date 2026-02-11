@@ -31,29 +31,29 @@ public class ShadyRestRoom2 {
         switch (getChoose) {
             case 1:
                 if (getView == 1) {
-                    System.out.println("You selected Queen bed with a lake view $"+(queen+15));                
+                    System.out.println("You selected Queen bed with a lake view $"+140);                
                 } else if (getView == 2) {
                     System.out.println("You selected Queen bed with a park view $125");
                 } else {
-                    System.out.println("Invalid entry view $139");
+                    System.out.println("Invalid entry view $"+140);
                 }
                 break;
             case 2:
                 if (getView == 1) {
-                    System.out.println("You selected King bed with a lake view $154");                
+                    System.out.println("You selected King bed with a lake view $"+154);                
                 } else if (getView == 2) {
-                    System.out.println("You selected King bed with a park view $139");
+                    System.out.println("You selected King bed with a park view $"+169);
                 } else {
-                    System.out.println("Invalid entry view $154");
+                    System.out.println("Invalid entry view $"+154);
                 }                
                 break;
             case 3:
                 if (getView == 1) {
-                    System.out.println("You selected King bed and a pullout couch with a lake view $"+154);                
+                    System.out.println("You selected King bed and a pullout couch with a lake view $179");                
                 } else if (getView == 2) {
                     System.out.println("You selected King and a  pullout couch bed with a park view $165");
                 } else {
-                    System.out.println("Invalid entry view $"+154);
+                    System.out.println("Invalid entry view $179");
                 }
                 break;
             default:
