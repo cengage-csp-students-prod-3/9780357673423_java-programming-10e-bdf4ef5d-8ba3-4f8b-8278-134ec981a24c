@@ -31,9 +31,9 @@ public class ShadyRestRoom2 {
         switch (getChoose) {
             case 1:
                 if (getView == 1) {
-                    System.out.println("You selected Queen bed with a lake view $"+(139+15));                
+                    System.out.println("You selected Queen bed with a lake view $"+(125+15));                
                 } else if (getView == 2) {
-                    System.out.println("You selected Queen bed with a park view $125");
+                    System.out.println("You selected Queen bed with a park view $"+125);
                 } else {
                     System.out.println("Invalid entry view $"+140);
                 }
@@ -49,11 +49,11 @@ public class ShadyRestRoom2 {
                 break;
             case 3:
                 if (getView == 1) {
-                    System.out.println("You selected King bed and a pullout couch with a lake view $"+(156+15));                
+                    System.out.println("You selected King bed and a pullout couch with a lake view $"+(165+15));                
                 } else if (getView == 2) {
                     System.out.println("You selected King and a  pullout couch bed with a park view $"+165);
                 } else {
-                    System.out.println("Invalid entry view $"+(156+15));
+                    System.out.println("Invalid entry view $"+(165+15));
                 }
                 break;
             default:
