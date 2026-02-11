@@ -31,11 +31,11 @@ public class ShadyRestRoom2 {
         switch (getChoose) {
             case 1:
                 if (getView == 1) {
-                    System.out.println("You selected Queen bed with a lake view $"+(140+15));                
+                    System.out.println("You selected Queen bed with a lake view $"+(139+15));                
                 } else if (getView == 2) {
                     System.out.println("You selected Queen bed with a park view $125");
                 } else {
-                    System.out.println("Invalid entry view $"+(140+15));
+                    System.out.println("Invalid entry view $"+140);
                 }
                 break;
             case 2:
