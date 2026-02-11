@@ -1,51 +1,60 @@
-// Write your code here
-
 /*
- the program determines the price of a room. Ask the user to choose 1 for a queen bed, 
- 2 for a king, or 3 for a king and a pullout couch. The output echoes the input and displays 
- the price of the room: $125 for queen, $139 for king, and $165 for a suite with a king bed 
- and a pullout couch. If the user enters an invalid code, display an appropriate message 
- and set the price to 0.
-*ask for one of thes eoptions
-(1) Queen bed
-(2) King bed
-(3) Suite with a king bed and pull-out couch
-
-    input 
-Enter Selection (1, 2, or 3
-
-    output
-The output echoes the input and displays the price of the room: $125 for queen, $139 for king, 
-and $165 for a suite with a king bed and a pullout couch. 
-*If the user enters an invalid code, display please choose a valid caode of purshase; total order $0.
+Add a prompt to the ShadyRestRoom application to ask the user to specify a 
+(1) lake view or a (2) park view, but ask that question only if the bed size 
+entry is valid. Add $15 to the price of any room with a lake view. If the view 
+value is invalid, display an appropriate message and assume that the price is 
+for a room with a lake view. 
 */
 
 import java.util.Scanner;
 
 public class ShadyRestRoom2 {
-
     public static void main(String[] args) {
         int getChoose;
+        int getView;
         System.out.println("Menu:");
         System.out.println("(1) Queen bed");
-        System.out.println("(2) king bed");
-        System.out.println("(3) Suite with a king bed and pull-out couch");    
+        System.out.println("(2) King bed");
+        System.out.println("(3) Suite with a king bed and pull-out couch");
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter Selection (1, 2, or 3) >> ");    
+        System.out.println("Enter Selection (1, 2, or 3) >> ");
         getChoose = keyboard.nextInt();
+        System.out.println("Please choose a view:");
+        System.out.println("(1) a lake");
+        System.out.println("(2) a park");
+        System.out.println("Enter Selection (1 or 2) >> ");
+        getView= keyboard.nextInt(); 
+             
         switch (getChoose) {
-            case 1: 
-                System.out.println("You selected Queen bed $125");                
+            case 1:
+                if (getView == 1) {
+                    System.out.println("You selected Queen bed with a lake view $139");                
+                } else if (getView == 2) {
+                    System.out.println("You selected Queen bed with a park view $125");
+                } else {
+                    System.out.println("Invalid entry view $139");
+                }
                 break;
             case 2:
-                System.out.println("You selected King bed $139");                
+                if (getView == 1) {
+                    System.out.println("You selected King bed with a lake view $154");                
+                } else if (getView == 2) {
+                    System.out.println("You selected King bed with a park view $139");
+                } else {
+                    System.out.println("Invalid entry view $154");
+                }                
                 break;
             case 3:
-                System.out.println("You selected king bed and pull-out couch $165");  
-                break;                              
-            default:
-                System.out.println("please choose a valid caode of purshase; your order balance is $0.");
+                if (getView == 1) {
+                    System.out.println("You selected King bed and a pullout couch with a lake view $179");                
+                } else if (getView == 2) {
+                    System.out.println("You selected King and a  pullout couch bed with a park view $165");
+                } else {
+                    System.out.println("Invalid entry view $179");
+                }
                 break;
+            default:
+                System.out.println("You enter an invalid code $0");
         }
     }
 }
