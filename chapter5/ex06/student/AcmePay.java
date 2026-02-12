@@ -71,7 +71,9 @@ public class AcmePay {
         totalRegWeekPay = hoursWorked * payRate;
         if (hoursWorked >= 40) {
             totalOTWeekPay = (payRate*OT_RATE)*(hoursWorked-40);
-        }   
+        } else {
+            totalOTWeekPay = 0;
+        }
 
         //RETIREMENT PLAN
         if (getShift == 2 || getShift == 3) {
