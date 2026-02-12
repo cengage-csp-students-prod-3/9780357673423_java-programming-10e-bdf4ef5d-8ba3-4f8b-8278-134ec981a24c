@@ -44,70 +44,63 @@ participate in the retirement plan (1 for "yes", 2 for "no")
 import java.util.Scanner;
 
 public class AcmePay {
-        static double fistShift=17;
-        static double secondShift=18.50;
-        static double thirdShift=22;
-        static int getShift;
-        static int hoursWorked;
-        static double relularPay;
-        static double overtimePay;
-        static double totalOTP;
-        static double retirementDed;
-        static double netPay;
-
     public static void main(String[] args) {
-        // double fistShift=17;
-        // double secondShift=18.50;
-        // double thirdShift=22;
-        // int getShift;
-        // int hoursWorked;
-        // double relularPay;
-        // double overtimePay;
-        // double totalOTP;
-        // double retirementDed;
-        // double netPay;
+        final double FIRST_SHIFT=17, SECOND_SHIFT=18.50, THIRD_SHIFT=22;
+        int hoursWorked, getShift, getRPlan;
+        final double OT_RATE=1.5, RETIREMENT_DEDUCTION=0.3;
+        double totalRegWeekPay=0, totalOTWeekPay=0, netPay=0, payRate=0, totalRetPlan=0;
+
         Scanner keyboard = new Scanner(System.in);
+
+        //SHIFT       
         System.out.println("Please enter shift - 1, 2, or 3 >> ");
         getShift = keyboard.nextInt();
-        switch (getShift) {
-            case 1:
-                System.out.println("Please enter hours worked (can be a fraction) >>");
-                hoursWorked = keyboard.nextInt();
-                retirementDed=0;
-                if (hoursWorked<40) {                    
-                    System.out.println("Hours worked is      "+hoursWorked);
-            System.out.println("Shift:             "+getShift);
-            System.out.println("Hourly pay rate is $"+fistShift);
-            relularPay=hoursWorked*fistShift;
-            System.out.println("Regular pay is      $"+relularPay);
-            totalOTP=overtimePay*hoursWorked;
-            System.out.println("Overtime pay is     $"+totalOTP);
-            System.out.println("Retirement deduction is $"+retirementDed);
-            netPay= relularPay+overtimePay-retirementDed;
-            System.out.println("     Net pay is..............$"+netPay);;
-                } else {
-                    overtimePay = fistShift*.5;
-                    print();
-                }
-                break;
-            case 2:
-                System.out.println("is 2");
-                break;
-            case 3:
-                System.out.println("is 3");
-                break;
+        if (getShift == 1) {
+            payRate = FIRST_SHIFT;
+        } else if (getShift == 2) {
+            payRate = SECOND_SHIFT;
+        } else if(getShift == 3) {
+            payRate = THIRD_SHIFT;
+        } else {
+            return;
         }
+
+        //HOURS
+        System.out.println("Please enter hours worked (can be a fraction) >> ");
+        hoursWorked = keyboard.nextInt();   
+        totalRegWeekPay = hoursWorked * payRate;
+        if (hoursWorked >= 40) {
+            totalOTWeekPay = (payRate*OT_RATE)*(hoursWorked-40);
+        }   
+
+        //RETIREMENT PLAN
+        if (getShift == 2 || getShift == 3) {
+            System.out.println("Do you want to participate in the retirement plan?");
+            System.out.println("   Enter 1 for Yes and 2 for No >> ");
+            getRPlan = keyboard.nextInt();
+            if (getRPlan == 1) {
+                totalRetPlan = hoursWorked * RETIREMENT_DEDUCTION;
+            } else if (getRPlan == 2) {
+                totalRetPlan = 0;
+            } else {
+                return;
+            }
+        } 
+        
+        //NETPAY
+        netPay = totalOTWeekPay + totalRegWeekPay + totalRetPlan;
+        
+        //PRINT
+        System.out.println("Hours worked is    "+hoursWorked);
+        System.out.println("Shift:              "+getShift);
+        System.out.println("Hourly pay rate is  "+payRate);
+        System.out.println("Regular pay is     "+totalRegWeekPay);
+        System.out.println("Overtime pay is    "+totalOTWeekPay);
+        System.out.println("Retirement deduction is "+totalRetPlan);
+        System.out.println("     Net pay is.............."+netPay);
     }
-    public static void print(){
-            System.out.println("Hours worked is      "+hoursWorked);
-            System.out.println("Shift:             "+getShift);
-            System.out.println("Hourly pay rate is $"+fistShift);
-            relularPay=hoursWorked*fistShift;
-            System.out.println("Regular pay is      $"+relularPay);
-            totalOTP=overtimePay*hoursWorked;
-            System.out.println("Overtime pay is     $"+totalOTP);
-            System.out.println("Retirement deduction is $"+retirementDed);
-            netPay= relularPay+overtimePay-retirementDed;
-            System.out.println("     Net pay is..............$"+netPay);
-    }
+    
+    
 }
+
+
