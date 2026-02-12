@@ -47,8 +47,8 @@ public class AcmePay {
     public static void main(String[] args) {
         final double FIRST_SHIFT=17, SECOND_SHIFT=18.50, THIRD_SHIFT=22;
         int hoursWorked, getShift, getRPlan;
-        final double OT_RATE=1.5, RETIREMENT_DEDUCTION=0.3;
-        double totalRegWeekPay=0, totalOTWeekPay=0, netPay=0, payRate=0, totalRetPlan=0;
+        final double OT_RATE=1.5, RETIREMENT_DEDUCTION=0.03;
+        double totalRegWeekPay=0, totalOTWeekPay=0, netPay=0, payRate=0, totalRetPlan=0, grossPay=0;
         final int REG_WEEK_HOURS=40;
 
         Scanner keyboard = new Scanner(System.in);
@@ -76,21 +76,22 @@ public class AcmePay {
             totalOTWeekPay = 0;
         }
         //RETIREMENT PLAN
+        grossPay = totalOTWeekPay + totalRegWeekPay;
         if (getShift == 2 || getShift == 3) {
             System.out.println("Do you want to participate in the retirement plan?");
             System.out.println("   Enter 1 for Yes and 2 for No >> ");
             getRPlan = keyboard.nextInt();
             if (getRPlan == 1) {
-                totalRetPlan = hoursWorked * RETIREMENT_DEDUCTION;
+                totalRetPlan = grossPay * RETIREMENT_DEDUCTION;
             } else if (getRPlan == 2) {
                 totalRetPlan = 0;
             } else {
                 return;
+                
             }
         } 
-        
         //NETPAY
-        netPay = totalOTWeekPay + totalRegWeekPay + totalRetPlan;
+        netPay = grossPay - totalRetPlan;
         
         //PRINT
         System.out.println("Hours worked is    "+hoursWorked);
