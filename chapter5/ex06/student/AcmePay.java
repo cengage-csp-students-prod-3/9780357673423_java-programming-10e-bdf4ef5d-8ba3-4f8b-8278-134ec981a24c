@@ -49,7 +49,7 @@ public class AcmePay {
         int hoursWorked, getShift, getRPlan;
         final double OT_RATE=1.5, RETIREMENT_DEDUCTION=0.3;
         double totalRegWeekPay=0, totalOTWeekPay=0, netPay=0, payRate=0, totalRetPlan=0;
-        // int regWeekHours=40;
+        final int REG_WEEK_HOURS=40;
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -74,7 +74,7 @@ public class AcmePay {
         } else {
             totalOTWeekPay = 0;
         }
-        totalRegWeekPay = hoursWorked * payRate;
+        totalRegWeekPay = REG_WEEK_HOURS * payRate;
 
         //RETIREMENT PLAN
         if (getShift == 2 || getShift == 3) {
