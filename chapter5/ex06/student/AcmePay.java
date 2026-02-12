@@ -49,7 +49,7 @@ public class AcmePay {
         int hoursWorked, getShift, getRPlan;
         final double OT_RATE=1.5, RETIREMENT_DEDUCTION=0.03;
         double totalRegWeekPay=0, totalOTWeekPay=0, netPay=0, payRate=0, totalDedRetPlan=0;
-        final int REG_WEEK_HOURS=40;
+        // final int REG_WEEK_HOURS=40;
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -69,7 +69,7 @@ public class AcmePay {
         //HOURS
         System.out.println("Please enter hours worked (can be a fraction) >> ");
         hoursWorked = keyboard.nextInt();   
-        totalRegWeekPay = REG_WEEK_HOURS * payRate;
+        totalRegWeekPay = hoursWorked * payRate;
         if (hoursWorked >= 40) {
             totalOTWeekPay = (payRate*OT_RATE)*(hoursWorked-40);
         } else {
