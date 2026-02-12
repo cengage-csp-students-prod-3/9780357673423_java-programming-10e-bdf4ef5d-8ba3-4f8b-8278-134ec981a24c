@@ -61,7 +61,7 @@ public class TwelveDays {
             case 2:
                 System.out.println("Two turtle doves and");
             case 1:
-                System.out.println("A turtle doves and");
+                System.out.println("A partridge in a pear tree");
             
         
             default:
