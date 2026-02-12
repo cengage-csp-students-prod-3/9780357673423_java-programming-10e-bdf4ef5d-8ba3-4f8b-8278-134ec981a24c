@@ -1,13 +1,7 @@
 
 Status: FAILED!
-Test: The `AcmePay` program displays a third-shift worker's payment information for 30 hours of work with no retirement.
-Reason: In this simulation, a third-shift worker working 30 hours a week with no retirement should receive $660.00 a week. Unable to find 'Regular pay is $660.00' in the program's output.
-Error : class java.lang.AssertionError
-- - - - - - - - - -
-
-Status: FAILED!
 Test: The `AcmePay` program displays a third-shift worker's payment information for 30 hours of work with retirement.
-Reason: In this simulation, a third-shift worker working 30 hours a week with retirement should receive $660.00 a week. Unable to find 'Regular pay is $660.00' in the program's output.
+Reason: In this simulation, a third-shift worker working 30 hours a week with retirement should receive a net pay of $640.20. Unable to find 'Net Pay is $640.20' in the program's output.
 Error : class java.lang.AssertionError
 - - - - - - - - - -
 
