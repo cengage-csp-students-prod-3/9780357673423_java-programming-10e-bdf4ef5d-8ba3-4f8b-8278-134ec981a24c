@@ -1,0 +1,12 @@
+
+Status: FAILED!
+Test: 
+Reason: Unable to find the day 1 gift in the program's output. Looking for `a partridge in a pear tree`.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
+
+Status: FAILED!
+Test: 
+Reason: Unable to find the day 1 gift in the program's output. Looking for `a partridge in a pear tree`.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
