@@ -69,13 +69,12 @@ public class AcmePay {
         //HOURS
         System.out.println("Please enter hours worked (can be a fraction) >> ");
         hoursWorked = keyboard.nextInt();   
+        totalRegWeekPay = REG_WEEK_HOURS * payRate;
         if (hoursWorked >= 40) {
             totalOTWeekPay = (payRate*OT_RATE)*(hoursWorked-40);
         } else {
             totalOTWeekPay = 0;
         }
-        totalRegWeekPay = REG_WEEK_HOURS * payRate;
-
         //RETIREMENT PLAN
         if (getShift == 2 || getShift == 3) {
             System.out.println("Do you want to participate in the retirement plan?");
