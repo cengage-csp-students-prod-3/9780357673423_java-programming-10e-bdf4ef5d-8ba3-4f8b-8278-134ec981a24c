@@ -81,7 +81,7 @@ public class AcmePay {
             System.out.println("   Enter 1 for Yes and 2 for No >> ");
             getRPlan = keyboard.nextInt();
             if (getRPlan == 1) {
-                totalDedRetPlan = totalRegWeekPay * RETIREMENT_DEDUCTION;
+                totalDedRetPlan = (totalRegWeekPay+totalOTWeekPay) * RETIREMENT_DEDUCTION;
             } else if (getRPlan == 2) {
                 totalDedRetPlan = 0;
             } else {
