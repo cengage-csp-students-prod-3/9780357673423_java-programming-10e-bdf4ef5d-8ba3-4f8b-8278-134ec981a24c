@@ -1,7 +1,12 @@
 
 Status: FAILED!
-Check: 1
-Test: 
-Reason: 
-Error : RuntimeError - There was an issue compiling the java files.
-Timestamp: 2026-05-01 17:51:34.589665
+Test: The `InputCharacterInfo` program displays the correct output for the input character.
+Reason: null
+Error : class java.util.NoSuchElementException
+- - - - - - - - - -
+
+Status: FAILED!
+Test: The `InputCharacterInfo` program displays the correct output for the input character.
+Reason: The simulated user input was p. The program should display 'p is a letter or digit'.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
