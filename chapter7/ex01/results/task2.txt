@@ -1,0 +1,12 @@
+
+Status: FAILED!
+Test: The `InputCharacterInfo` program displays the correct output for the input character.
+Reason: null
+Error : class java.util.NoSuchElementException
+- - - - - - - - - -
+
+Status: FAILED!
+Test: The `InputCharacterInfo` program displays the correct output for the input character.
+Reason: The simulated user input was p. The program should display 'p is a letter or digit'.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
