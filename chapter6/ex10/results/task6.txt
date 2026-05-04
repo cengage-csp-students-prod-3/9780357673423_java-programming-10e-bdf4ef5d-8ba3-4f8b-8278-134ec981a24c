@@ -1,0 +1,6 @@
+
+Status: FAILED!
+Test: The `RetirementGoal2` program displays the amount of money saved for retirement with 4% year-over-year interest.
+Reason: In this simulation, $8,000 per year is being saved for retirement in 10 years with 4% interest. Unable to find '99890.81126301554' in the program's output.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
