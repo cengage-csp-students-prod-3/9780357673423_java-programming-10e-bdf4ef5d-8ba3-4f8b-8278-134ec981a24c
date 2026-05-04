@@ -1,0 +1,12 @@
+
+Status: FAILED!
+Test: The `CountByAnything` program accepts an interval from the console and displays the multiple of that input from 5 to 500.
+Reason: The value entered in this simulation was 7. The program's output should print the following numbers on a single line: '7 14 21 28 35 42 49 56 63 70'.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
+
+Status: FAILED!
+Test: The `CountByAnything` program accepts an interval from the console and displays the multiple of that input from 5 to 500.
+Reason: The value entered in this simulation was 23. The program's output should print the following numbers on a single line: '23 46 69 92 115 138 161 184 207 230'.
+Error : class java.lang.AssertionError
+- - - - - - - - - -
